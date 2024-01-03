@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE search SYSTEM "behaviorsearch.dtd">
+<search>
+    <bsearchVersionNumber>1,10</bsearchVersionNumber>
+    <modelInfo>
+        <modelFile>C:\Program Files\NetLogo 6.4.0\models\Sample Models\Earth Science\Climate Change.nlogo</modelFile>
+        <modelSetupCommands>setup</modelSetupCommands>
+        <modelStepCommands>go</modelStepCommands>
+        <modelStopCondition/>
+        <modelStepLimit>2000</modelStepLimit>
+        <modelMetricReporter>temperature</modelMetricReporter>
+        <modelMeasureIf>true</modelMeasureIf>
+    </modelInfo>
+    <fitnessInfo>
+        <fitnessMinimized>false</fitnessMinimized>
+        <fitnessCollecting>AT_FINAL_STEP</fitnessCollecting>
+        <fitnessSamplingReplications>10</fitnessSamplingReplications>
+        <fitnessCombineReplications>MEAN</fitnessCombineReplications>
+    </fitnessInfo>
+    <searchSpace>
+        <paramSpec>["sun-brightness" [0 0.2 5]]</paramSpec>
+        <paramSpec>["albedo" [0 0.05 1]]</paramSpec>
+    </searchSpace>
+    <searchMethod type="RandomSearch"/>
+    <chromosomeRepresentation type="GrayBinaryChromosome"/>
+    <caching>true</caching>
+    <evaluationLimit>300</evaluationLimit>
+    <bestCheckingNumReplications>0</bestCheckingNumReplications>
+</search>
